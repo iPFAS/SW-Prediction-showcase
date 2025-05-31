@@ -74,7 +74,7 @@ The project follows a standard machine learning pipeline:
 ## Directory Structure
 
 ```plaintext
-e:\code\jupyter\固废产生\SW-Prediction\
+SW-Prediction/
 ├── config                  # Configuration files
 │   └── config.py
 ├── data                    # Raw, intermediate, and processed data
@@ -99,15 +99,15 @@ e:\code\jupyter\固废产生\SW-Prediction\
 class Config:
     # --- Path Configuration ---
     PATH_CONFIG = {
-        'data_dir': 'e:\\code\\jupyter\\data\\processed', # Adjusted path
-        'model_dir': 'e:\\code\\jupyter\\models', # Adjusted path
-        'output_dir': 'e:\\code\\jupyter\\reports\\figures', # Adjusted path
+        'data_dir': './data/processed', # Relative path to processed data
+        'model_dir': './models', # Relative path to models
+        'output_dir': './reports/figures', # Relative path to output figures
         # ... other paths
     }
 
     # --- Data Configuration ---
     DATA_CONFIG = {
-        'data_path': 'e:\\code\\jupyter\\data\\raw\\your_data.xlsx', # Adjusted path
+        'data_path': './data/raw/your_data.xlsx', # Relative path to data file
         'sheet_name': 'Sheet1', # Sheet containing the data
         'target_column': 'MSW_Generation', # Name of the target variable column
         'feature_columns': ['GDP PPP/capita 2017', 'Population', ...], # List of base feature columns to use

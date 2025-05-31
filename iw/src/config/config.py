@@ -10,7 +10,7 @@ class Config:
 
     # 数据加载配置
     DATA_CONFIG = {
-        'data_path': r"E:\博士\1-课题\0-固废产生的研究\2-数据整理结果\1-MSW_CW_IW_HIW_training_data.xlsx", 
+        'data_path': r"", 
         'target_column': 'IW',
         'common_columns': ['Region', 'Income Group'],
         'country_train_size': 0.8,
@@ -24,11 +24,11 @@ class Config:
         'categorical_columns': [],
         'target_transform_method': 'log',
         'base_year': 1990,
-        'historical_data_path': r'E:\博士\1-课题\0-固废产生的研究\2-数据整理结果\0-indicator_list-v2.xlsx',
+        'historical_data_path': r'',
         'historical_sheet': 'IW全部指标',
-        'historical_msw_data_path': r'E:\博士\1-课题\0-固废产生的研究\2-数据整理结果\1-MSW_CW_IW_HIW_training_data.xlsx',
+        'historical_msw_data_path': r'',
         'historical_msw_sheet': 'iw_result',
-        'future_data_path': r'E:\博士\1-课题\0-固废产生的研究\2-数据整理结果\0-indicator_list-v2.xlsx',
+        'future_data_path': r'',
         'future_sheet': 'IW全部指标',
         'usecols': ['Year', 'Country Name', 'Population', 
                     'GDP PPP 2017', 'GDP PPP/capita 2017','Income Group', 'Region','Urban population %']
