@@ -6,6 +6,52 @@ This project aims to predict the generation of different types of solid waste (M
 
 The framework is designed to be adaptable for different waste streams, potentially with variations in feature engineering and data splitting strategies depending on data availability and characteristics.
 
+## Installation
+
+### Prerequisites
+
+- Python 3.8 or higher
+- pip (Python package installer)
+
+### Dependencies
+
+Install the required packages using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+The main dependencies include:
+
+- **pandas** (>=1.3.0): Data manipulation and analysis
+- **scikit-learn** (>=0.24.2): Machine learning library
+- **pycaret** (>=3.0.0): Low-code machine learning library
+- **matplotlib** (>=3.4.0): Plotting library
+- **seaborn** (>=0.11.0): Statistical data visualization
+- **openpyxl** (>=3.0.0): Excel file reading/writing
+- **joblib** (>=1.0.0): Model serialization
+- **xlrd** (>=2.0.0): Excel file reading
+
+### Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iPFAS/SW-Prediction-showcase.git
+   cd SW-Prediction-showcase
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Configure your data paths in `config/config.py`
+
+4. Run the main pipeline:
+   ```bash
+   python main.py
+   ```
+
 ## Workflow Summary
 
 The project follows a standard machine learning pipeline:
